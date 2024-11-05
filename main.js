@@ -1,3 +1,5 @@
+function menu()
+{
 // Setup the menu
 let message = `Hi! Please make a selection:
 1 - Play
@@ -7,30 +9,35 @@ let message = `Hi! Please make a selection:
 5 - Exit
 `
 // Prompt with the menu
-let selection = Number(prompt(msg));
+let selection = Number(prompt(message))
 
 if (selection == 1) {
-    play()
-}
-else if (selection == 2) {
-    Options()
-}
-else if (selection == 3) {
-    dlc()
-}
-else if (selection == 4) {
-    update()
-}
-else if (selection == 5) {
-    exit()
+    alert("Let's Play!")
+    let difficulty = +prompt(`Select a difficulty:
+        1 - Easy 
+        2 - Medium
+        3 - Hard`)
+
+        alert("You selected: " + difficulty)
+
+}   else if (selection == 2) {
+    alert("You selected Options.")
+}   else if (selection == 3) {
+    alert("No new DLC at this time.")
+}   else if (selection == 4) {
+    alert("Everything is up to date.")
+}    else if (selection == 5) {
+    alert("Bye!")
 }
 
-function startgame() 
+}
+
+function startgame() {
 
 
-let name = prompt("Please enter your name:")
+    let name = prompt("Please enter your name:")
     alert("Welcome, " + name + " to Haunted St. Matthew HS!");
-{
+
     let choice = prompt("You can go to the (1) library, (2) basement or (3) autoshop.")
 
     if (choice == 1) {
@@ -51,6 +58,7 @@ let name = prompt("Please enter your name:")
         return;
     }
 }
+
 function library() {
 let lib = prompt("You see a creepy old book on a dusty table. Do you (1) open it or (2) leave it alone?")
 }
