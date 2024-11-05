@@ -28,8 +28,9 @@ if (selection == 1) {
     alert("Everything is up to date.")
 }    else if (selection == 5) {
     alert("Bye!")
+}   else {
+    alert("Invalid selection/input.");
 }
-
 }
 
 function startgame() {
