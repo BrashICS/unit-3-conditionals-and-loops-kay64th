@@ -85,3 +85,27 @@ function autoshop() {
 if (auto == 2) {
     auto = alert("You trip and fall... The ghost catches you!")
 }
+
+
+
+function random_until(min, max, stop) {
+// check that max is greater than min. if not, return -1;
+    if (max <= min) {
+        return -1;
+    }
+    // check that stop is between (or equal to) min and max. if no, return -1;
+    if (stop < min || stop > max || max <= min) {
+        return -1;
+    }
+// generate the first random number
+    let rnd = randInt(min, max);
+// check to see if its the stop value
+    while (rnd != stop) {
+        console.log(rnd)
+        rnd = randInt(min, max);
+ 
+    }
+
+    return stop;
+
+}
